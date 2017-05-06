@@ -5,6 +5,7 @@
   "main": "index.js",
   "repository": "git@github.com:CodeAmend/womans-world-cup-by-country.git",
   "scripts": {
+    "build": "webpack",
     "serve": "webpack-dev-server"
   },
   "author": "Michael Bruce Allen",
@@ -14,6 +15,9 @@
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "style-loader": "^0.17.0",
     "webpack": "^2.5.0",
     "webpack-dev-server": "^2.4.5"
   },

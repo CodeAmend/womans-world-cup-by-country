@@ -5,6 +5,8 @@ import { createStore } from 'redux';
 
 import reducers from './reducers';
 
+require('../style/style.css');
+
 const App = () => {
   return (
     <div>Womans World Cup Project</div>
