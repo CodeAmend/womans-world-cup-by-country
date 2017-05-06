@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 
 import reducers from './reducers';
 
-require('../style/style.css');
+require('../style/style.less');
 
 const App = () => {
   return (

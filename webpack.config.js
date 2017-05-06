@@ -9,9 +9,6 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js'
   },
-  plugins: [
-    new ExtractTextPlugin('style.css')
-  ],
   module: {
     rules: [
       {
@@ -20,12 +17,16 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.css/,
-        loader: ExtractTextPlugin.extract({
-          loader: 'css-loader'
+        test: /\.(css|less)/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'less-loader']
         })
       }
 
     ]
-  }
+  },
+  plugins: [
+    new ExtractTextPlugin('style.css')
+  ]
 };
