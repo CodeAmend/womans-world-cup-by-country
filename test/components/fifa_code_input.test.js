@@ -15,4 +15,9 @@ describe('FifaCodeInput' , () => {
   it("has the correct className: fifa-country-code-input", () => {
     expect(component).to.have.class('fifa-code-input');
   });
+
+  it("has a text input", () => {
+    expect(component.find('input[type=text]')).to.exist;
+  })
+
 });
