@@ -25,3 +25,11 @@ http://worldcup.sfg.io/
 
 ###### CSS processor
 `LESS`
+
+
+
+<br><br>
+>TODO:
+
+* What are source maps? Are these useful for this project?
+* Webpack dev server does not compile less
