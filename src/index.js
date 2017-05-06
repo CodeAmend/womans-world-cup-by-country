@@ -5,13 +5,9 @@ import { createStore } from 'redux';
 
 import reducers from './reducers';
 
-require('../style/style.less');
+import App from './components/app.js';
 
-const App = () => {
-  return (
-    <div>Womans World Cup Project</div>
-  )
-}
+require('../style/style.less');
 
 ReactDOM.render(
   <Provider store={createStore(reducers)}>
