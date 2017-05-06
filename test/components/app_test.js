@@ -11,4 +11,10 @@ describe('App' , () => {
   it('renders something', () => {
     expect(component).to.exist;
   });
+
+  // INPUT field
+  it('has a input with class fifa-code-input', () => {
+    expect(component).to.have.class('fifa-code-input');
+  })
+
 });
