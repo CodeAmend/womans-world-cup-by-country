@@ -34,6 +34,11 @@ describe('FifaCodeInput' , () => {
       expect(component.find('input')).to.have.value('BRA')
     })
 
+    it("clears the text when submitted", () => {
+      component.simulate('submit')
+      expect(component.find('input')).to.have.value('')
+    })
+
   })
 
 });
