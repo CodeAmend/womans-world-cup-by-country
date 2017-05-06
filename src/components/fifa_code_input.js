@@ -5,6 +5,7 @@ class FifaCodeInput extends Component {
     return (
       <form className="fifa-code-input">
         <input type="text" />
+        <button type="submit">Submit</button>
       </form>
     )
   }

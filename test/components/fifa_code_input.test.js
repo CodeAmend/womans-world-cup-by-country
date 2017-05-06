@@ -20,6 +20,10 @@ describe('FifaCodeInput' , () => {
     expect(component.find('input[type=text]')).to.exist;
   })
 
+  it("has a button", () => {
+    expect(component.find('button[type=submit]')).to.exist;
+  })
+
   describe("Entering some text and submitting", () => {
 
     beforeEach(() => {
@@ -28,7 +32,7 @@ describe('FifaCodeInput' , () => {
 
     it("shows text that is entered", () => {
       expect(component.find('input')).to.have.value('BRA')
-    })    
+    })
 
   })
 
