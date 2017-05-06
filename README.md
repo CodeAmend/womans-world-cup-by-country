@@ -4,6 +4,9 @@
 ##### API
 http://worldcup.sfg.io/
 
+##### Fifa Country Codes
+https://en.wikipedia.org/wiki/List_of_FIFA_country_codes
+
 ##### User
 * A user can type in a `COUNTRY_CODE`
 * A user can click `Submit`
