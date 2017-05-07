@@ -1,16 +1,19 @@
 const { LOADING_DATA } = require('../actions/index')
 
 const defaultState = {
-    isLoading: false,
-    data: []
+  isLoading: false,
+  data: []
 };
 
 const FetchMatchData = (state = defaultState, action) => {
 
     switch (action.type) {
+
       case LOADING_DATA:
-        state.isLoading = true;
-        return [...state]
+        return Object.assign({}, state, {
+          isLoading: true,
+          fifaCode: action.fifaCode
+        })
 
       default:
         return state;
