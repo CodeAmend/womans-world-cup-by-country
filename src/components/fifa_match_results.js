@@ -10,6 +10,11 @@ class FifaMatchResults extends Component {
     if (isLoading) return (<div className='loading'>LOADING...</div>)
     if (data.length === 0) return (<div className='no-data'>No Data...</div>)
 
+    return (
+      <ul className="match-results">
+        
+      </ul>
+    )
   }
 }
 
