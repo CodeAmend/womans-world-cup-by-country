@@ -24,15 +24,30 @@ class FifaCodeInput extends Component {
   }
 
   render() {
+    // Animate lading during dispatch of LOADING_DATA 
+    const isLoading = (this.props.isLoading) ? 'is-loading' : '';
+
     return (
-      <form
-        onSubmit={this.handleSubmit.bind(this)}
-        className="fifa-code-input">
-        <input
-          type="text"
-          value={this.state.fifaCode}
-          onChange={this.handleChange.bind(this)}/>
-        <button type="submit">Submit</button>
+      <form onSubmit={this.handleSubmit.bind(this)}
+
+            className="fifa-code-input"
+            >
+            <div className="field has-addons">
+              <p className="control">
+                <input className="input"
+                       value={this.state.fifaCode}
+                       onChange={this.handleChange.bind(this)}
+                       type="text"
+                       placeholder="Fifa Country Code"
+                       />
+              </p>
+              <p className="control">
+                <button type="submit" className={`button ${isLoading} is-success`}>
+                  Search
+                </button>
+              </p>
+            </div>
+
       </form>
     )
   }
