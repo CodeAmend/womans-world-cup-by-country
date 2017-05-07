@@ -23,9 +23,14 @@ describe("FifaMatchResults" , () => {
   });
 
   it("Recieve state: has class match-results", () => {
-    makeComponent(false, { location: 'Brazil' } )
+    makeComponent(false, [{ location: 'Brazil' }] )
     expect(component).to.have.class('match-results');
   });
 
+  it("Render state: has class mutiple match-result classes", () => {
+    makeComponent(false, [{ location: 'Brazil' }, { location: 'France' }] )
+    // expect(component).to.have.class('match-result');
+    expect(component.find('.match-result')).to.exist;
+  });
 
 });

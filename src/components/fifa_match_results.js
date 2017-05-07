@@ -3,6 +3,14 @@ import _ from 'lodash';
 
 class FifaMatchResults extends Component {
 
+  renderMatchResults() {
+    return this.props.matchData.data.map((match) => {
+      return (
+        <li className="match-result">{ match.location }</li>
+      )
+    })
+  }
+
   render() {
 
     const { isLoading, data } = this.props.matchData;
@@ -12,7 +20,7 @@ class FifaMatchResults extends Component {
 
     return (
       <ul className="match-results">
-        
+        {this.renderMatchResults()}
       </ul>
     )
   }
