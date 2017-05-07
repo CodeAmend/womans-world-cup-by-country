@@ -24,7 +24,7 @@ class FifaCodeInput extends Component {
   }
 
   render() {
-    // Animate lading during dispatch of LOADING_DATA 
+    // Animate lading during dispatch of LOADING_DATA
     const isLoading = (this.props.isLoading) ? 'is-loading' : '';
 
     return (
@@ -32,7 +32,7 @@ class FifaCodeInput extends Component {
 
             className="fifa-code-input"
             >
-            <div className="field has-addons">
+            <div className="field has-addons has-addons-centered">
               <p className="control">
                 <input className="input"
                        value={this.state.fifaCode}
