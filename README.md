@@ -32,7 +32,15 @@ https://en.wikipedia.org/wiki/List_of_FIFA_country_codes
 
 
 <br><br>
->TODO:
+>TODO: Questions
 
 * What are source maps? Are these useful for this project?
 * Webpack dev server does not compile less
+* Why use Redux Thunk or Saga for such a simple request!?
+  * It seems that the API returns a 500 error first then returns JSON
+  * Maybe we need to handle responses or promises or wait for second response
+
+
+
+> PROBLEMS
+* I am getting a 500 server error FIRST, then a 200 with the JSON data.
