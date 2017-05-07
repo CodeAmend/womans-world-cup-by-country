@@ -1,6 +1,7 @@
 import { renderComponent , expect } from '../test_helper';
 import FifaMatchResults from '../../src/components/fifa_match_results';
 
+import matchData from '../../match-data.json';
 
 describe("FifaMatchResults" , () => {
 
@@ -23,12 +24,12 @@ describe("FifaMatchResults" , () => {
   });
 
   it("Recieve state: has class match-results", () => {
-    makeComponent(false, [{ location: 'Brazil' }] )
+    makeComponent(false, matchData: { data: matchData } )
     expect(component).to.have.class('match-results');
   });
 
   it("Render state: has class mutiple match-result classes", () => {
-    makeComponent(false, [{ location: 'Brazil' }, { location: 'France' }] )
+    makeComponent(false, matchData: {data: matchData } )
     // expect(component).to.have.class('match-result');
     expect(component.find('.match-result')).to.exist;
   });

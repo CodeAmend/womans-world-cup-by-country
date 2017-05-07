@@ -6,15 +6,17 @@ class FifaMatchResults extends Component {
   renderMatchResults() {
     return this.props.matchData.data.map((match) => {
       return (
-          <section key={match.match_number} className="match-result level">
-            <article className="level-item has-text-right">
+          <section key={match.match_number} className="match-result is-full-width columns">
+            <article className="columm has-text-centered">
               <section className="home-result">
                 <p className="heading">{match.home_team.country}</p>
                 <p className="title">{match.home_team.goals}</p>
               </section>
             </article>
-            <p>VS</p>
-            <article className="level-item has-text-left">
+            <article className="column has-text-centered">
+              <p className="has-text-centered"><strong>VS</strong></p>
+            </article>
+            <article className="column has-text-centered">
               <section className="away-result">
                 <p className="heading">{match.away_team.country}</p>
                 <p className="title">{match.away_team.goals}</p>
