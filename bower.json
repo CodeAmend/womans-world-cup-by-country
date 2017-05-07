@@ -1,0 +1,22 @@
+{
+  "name": "womans-world-cup-by-country",
+  "description": "Womans World Cup: Display Teams By Country Code",
+  "main": "index.js",
+  "authors": [
+    "Michael Bruce Allen"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/CodeAmend/womans-world-cup-by-country",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bulma": "^0.4.1",
+    "font-awesome": "^4.7.0"
+  }
+}
