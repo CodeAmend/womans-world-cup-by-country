@@ -34,12 +34,16 @@ describe('FifaCodeInput' , () => {
       expect(component.find('input')).to.have.value('BRA')
     })
 
-    it("clears the text when submitted", () => {
+    xit("clears the text when submitted", () => {
       component.simulate('submit')
       expect(component.find('input')).to.have.value('')
     })
 
     it("calls fetchMatchData() action creator")
+
+    it("sends uppercase FIFA_CODE parameter")
+
+    it("Returns shows error message on screen")
 
   })
 
