@@ -1,5 +1,6 @@
 # Team Matches by Country Code
 
+![](./journal/world-cup-trial-project-sketch.jpg)
 
 ##### API
 http://worldcup.sfg.io/
