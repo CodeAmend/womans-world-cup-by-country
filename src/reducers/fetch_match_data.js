@@ -1,4 +1,4 @@
-const { LOADING_DATA } = require('../actions/index')
+const { LOADING_DATA, RECIEVED_DATA } = require('../actions/index')
 
 const defaultState = {
   isLoading: false,
@@ -11,10 +11,14 @@ const FetchMatchData = (state = defaultState, action) => {
 
       case LOADING_DATA:
         return Object.assign({}, state, {
-          isLoading: true,
-          fifaCode: action.fifaCode
+          fifaCode: action.fifaCode,
+          isLoading: true
         })
-
+      case RECIEVED_DATA:
+        return Object.assign({}, state, {
+          data: action.payload,
+          isLoading: false
+        })
       default:
         return state;
 

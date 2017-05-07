@@ -6,7 +6,10 @@ class FifaMatchResults extends Component {
   renderMatchResults() {
     return this.props.matchData.data.map((match) => {
       return (
-        <li className="match-result">{ match.location }</li>
+        <li
+          key={match.match_number}
+          className="match-result">{ match.location }>
+        </li>
       )
     })
   }
