@@ -6,14 +6,17 @@ const defaultState = {
 };
 
 const FetchMatchData = (state = defaultState, action) => {
+
     switch (action.type) {
       case LOADING_DATA:
-        return action.payload
+        state.isLoading = true;
+        return [...state]
 
       default:
-        return state
+        return state;
 
     }
+
 }
 
 export default FetchMatchData;

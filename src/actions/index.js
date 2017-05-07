@@ -1,9 +1,20 @@
-const LOADING_DATA = 'LOADING_DATA';
+export const LOADING_DATA = 'LOADING_DATA';
 
-const fetchMatchData = (fifaCountryCodes) => {
+const fetchMatchData = (fifaCountryCode) => {
   return {
     type: LOADING_DATA,
-    payload: { data: [], isLoading: true }
+    isLoading: true,
+    fifaCode: fifaCountryCode
+  }
+  // return (dispatch) => {
+  //   dispatch({ stuff: 66 })
+  // }
+}
+
+const fetchMatchDataStarted = (fifaCountryCodes) => {
+  return {
+    type: LOADING_DATA,
+    isLoading: true
   }
 }
 

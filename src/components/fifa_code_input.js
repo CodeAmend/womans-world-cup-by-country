@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
+
+import fetchMatchData from '../actions/index';
 
 class FifaCodeInput extends Component {
 
@@ -12,6 +15,7 @@ class FifaCodeInput extends Component {
 
   handleSubmit(event) {
     event.preventDefault()
+    this.props.fetchMatchData(this.state.fifaCode)
     this.setState({ fifaCode: '' })
   }
 
@@ -34,4 +38,5 @@ class FifaCodeInput extends Component {
   }
 }
 
-export default FifaCodeInput;
+
+export default connect(null, { fetchMatchData })(FifaCodeInput);

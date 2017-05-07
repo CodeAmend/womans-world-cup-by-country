@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
+import reduxThunk from 'redux-thunk';
 
 import reducers from './reducers';
 
@@ -9,8 +10,11 @@ import App from './components/app.js';
 
 require('../style/style.less');
 
+const createStoreFromMiddleware = applyMiddleware(reduxThunk)(createStore)
+
+
 ReactDOM.render(
-  <Provider store={createStore(reducers)}>
+  <Provider store={createStoreFromMiddleware(reducers)}>
     <App />
   </Provider>
   , document.querySelector('.container'));

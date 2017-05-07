@@ -39,7 +39,7 @@ describe('FifaCodeInput' , () => {
       expect(component.find('input')).to.have.value('')
     })
 
-    it("calls fetchMatches() action creator")
+    it("calls fetchMatchData() action creator")
 
   })
 
