@@ -1,8 +1,10 @@
-export const FETCH_MATCHES = 'fetch_matches';
+const LOADING_DATA = 'LOADING_DATA';
 
-export const fetchMatches = (fifaCode) => {
+const fetchMatchData = (fifaCountryCodes) => {
   return {
-    type: FETCH_MATCHES,
-    payload: ''
+    type: LOADING_DATA,
+    payload: { data: [], isLoading: true }
   }
 }
+
+export default fetchMatchData;

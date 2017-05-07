@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
+import FetchMatchData from './fetch_match_data';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  matchData: FetchMatchData
 });
 
 export default rootReducer;
