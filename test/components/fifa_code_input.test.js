@@ -1,6 +1,7 @@
 import { renderComponent , expect } from '../test_helper';
 import FifaCodeInput from '../../src/components/fifa_code_input.js';
 
+
 describe('FifaCodeInput' , () => {
   let component;
 
@@ -34,9 +35,11 @@ describe('FifaCodeInput' , () => {
       expect(component.find('input')).to.have.value('BRA')
     })
 
-    xit("clears the text when submitted", () => {
-      component.simulate('submit')
+    xit("clears the text when submitted", (done) => {
+      component.find('button').simulate('click')
       expect(component.find('input')).to.have.value('')
+      // TODO: WHY IS THIS NOT CLEARING DURRING TESTING ONLY!!!
+
     })
 
     it("calls fetchMatchData() action creator")
