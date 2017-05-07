@@ -20,4 +20,4 @@ ReactDOM.render(
   )}>
     <App />
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('#react_app'));
