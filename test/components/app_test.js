@@ -14,7 +14,7 @@ describe('App' , () => {
 
   // INPUT field
   it('has a input with class fifa-code-input', () => {
-    expect(component).to.have.class('fifa-code-input');
+    expect(component.find('form')).to.have.class('fifa-code-input');
   })
 
 });
