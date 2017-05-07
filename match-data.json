@@ -1,0 +1,110 @@
+[{
+  "match_number": 7,
+  "location": "Winnipeg Stadium",
+  "datetime": "2015-06-08T17:30:00.000-05:00",
+  "status": "completed",
+  "home_team": {
+    "country": "United States",
+    "code": "USA",
+    "goals": 3
+  },
+  "away_team": {
+    "country": "Australia",
+    "code": "AUS",
+    "goals": 1
+  },
+  "winner": "United States",
+  "winner_code": "USA",
+  "home_team_events": [{
+    "id": 88,
+    "type_of_event": "goal",
+    "player": "Rapinoe",
+    "time": "12"
+  }, {
+    "id": 100,
+    "type_of_event": "yellow-card",
+    "player": "Holiday",
+    "time": "56"
+  }, {
+    "id": 101,
+    "type_of_event": "goal",
+    "player": "Press",
+    "time": "61"
+  }, {
+    "id": 102,
+    "type_of_event": "yellow-card",
+    "player": "Rapinoe",
+    "time": "64"
+  }, {
+    "id": 113,
+    "type_of_event": "substitution-out",
+    "player": "Press",
+    "time": "68"
+  }, {
+    "id": 114,
+    "type_of_event": "substitution-in",
+    "player": "Heath",
+    "time": "68"
+  }, {
+    "id": 117,
+    "type_of_event": "goal",
+    "player": "Rapinoe",
+    "time": "78"
+  }, {
+    "id": 118,
+    "type_of_event": "substitution-out",
+    "player": "Leroux",
+    "time": "79"
+  }, {
+    "id": 119,
+    "type_of_event": "substitution-in",
+    "player": "Morgan",
+    "time": "79"
+  }, {
+    "id": 124,
+    "type_of_event": "substitution-out",
+    "player": "Rapinoe",
+    "time": "86"
+  }, {
+    "id": 125,
+    "type_of_event": "substitution-in",
+    "player": "Brian",
+    "time": "86"
+  }],
+  "away_team_events": [{
+    "id": 94,
+    "type_of_event": "goal",
+    "player": "De Vanna",
+    "time": "27"
+  }, {
+    "id": 115,
+    "type_of_event": "substitution-out",
+    "player": "Heyman",
+    "time": "69"
+  }, {
+    "id": 116,
+    "type_of_event": "substitution-in",
+    "player": "Simon",
+    "time": "69"
+  }, {
+    "id": 121,
+    "type_of_event": "substitution-in",
+    "player": "Kennedy",
+    "time": "80"
+  }, {
+    "id": 120,
+    "type_of_event": "substitution-out",
+    "player": "Gorry",
+    "time": "80"
+  }, {
+    "id": 122,
+    "type_of_event": "substitution-out",
+    "player": "Alleway",
+    "time": "83"
+  }, {
+    "id": 123,
+    "type_of_event": "substitution-in",
+    "player": "Sykes",
+    "time": "83"
+  }]
+}]
