@@ -29,11 +29,19 @@ class FifaMatchResults extends Component {
 
   render() {
 
-    const { isLoading, data } = this.props.matchData;
+    const { isLoading, data, error } = this.props.matchData;
 
-    if (isLoading) return (<div className='loading'>LOADING...</div>)
-    if (data.length === 0) return (<div className='no-data'>No Data...</div>)
+    if (error) {
+      return (
+        <div className="has-text-centered">
+          <h5>{error.serverMessage}</h5>
+          <p>{error.formError}</p>
+        </div>
+      )
+    }
 
+    if (isLoading) return (<div className="loading has-text-centered">LOADING...</div>)
+    if (data.length === 0) return (<div className="no-data has-text-centered">No Data...</div>)
     return (
       <ul className="match-results">
         {this.renderMatchResults()}

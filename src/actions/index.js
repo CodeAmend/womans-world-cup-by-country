@@ -2,6 +2,7 @@ const axios = require('axios');
 
 export const LOADING_DATA = 'LOADING_DATA';
 export const RECIEVED_DATA = 'RECIEVED_DATA';
+export const REQUEST_ERROR = 'REQUEST_ERROR';
 
 const fetchMatchDataLoading = (isLoading) => {
   return {
@@ -19,6 +20,15 @@ const fetchMatchDataRecieved = (payload) => {
 
 }
 
+const fetchMatchDataError = (error, fifaCode) => {
+  return {
+    type: REQUEST_ERROR,
+    errorMessage: error.message,
+    fifaCode
+  }
+
+}
+
 const fetchMatchData = (fifaCode) => {
   return (dispatch) => {
 
@@ -31,7 +41,7 @@ const fetchMatchData = (fifaCode) => {
         dispatch(fetchMatchDataRecieved(response.data));
       })
       .catch((err) => {
-        console.log(err);
+        dispatch(fetchMatchDataError(err, fifaCode))
       })
   }
 
