@@ -9,7 +9,7 @@ const Title =  () => {
   return (
     <main className="hero is-success is-bold title">
       <article className="level-item hero-body has-text-centered">
-        <h1 className="title">Womans World Soccer Matches</h1>
+        <h1 className="title">Women's World Soccer Matches</h1>
       </article>
     </main>
   )
