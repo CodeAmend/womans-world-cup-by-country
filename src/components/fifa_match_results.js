@@ -1,5 +1,6 @@
+// Modules
 import React, {Component} from 'react';
-import _ from 'lodash';
+
 
 class FifaMatchResults extends Component {
 

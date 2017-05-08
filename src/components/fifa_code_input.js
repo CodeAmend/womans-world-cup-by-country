@@ -1,7 +1,10 @@
+// Modules
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 
+// Actions
 import fetchMatchData from '../actions/index';
+
 
 class FifaCodeInput extends Component {
 

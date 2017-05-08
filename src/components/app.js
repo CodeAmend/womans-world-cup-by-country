@@ -1,6 +1,8 @@
+// Modules
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+// Components
 import FifaCodeInput from './fifa_code_input';
 import FifaMatchResults from './fifa_match_results';
 
@@ -27,6 +29,7 @@ class App extends Component  {
     )
   }
 }
+
 
 function mapStateToProps(state) {
   return { matchData: state.matchData }

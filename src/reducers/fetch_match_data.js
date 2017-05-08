@@ -1,26 +1,31 @@
+// Action State CONTSTANTS
 const { LOADING_DATA, RECIEVED_DATA, REQUEST_ERROR } = require('../actions/index')
 
-const defaultState = {
-  isLoading: false,
-  data: []
-};
+// Default State Object
+const defaultState = { isLoading: false, data: [] };
 
-const FetchMatchData = (state = defaultState, action) => {
 
+// Actions for FetchData - set defaultState object
+const FetchMatchData = (state=defaultState, action) => {
 
     switch (action.type) {
 
+      // API Request in Loading status
       case LOADING_DATA:
         return Object.assign({}, state, {
           fifaCode: action.fifaCode,
           isLoading: true
         })
+
+      // API request was a success
       case RECIEVED_DATA:
         return Object.assign({}, state, {
           data: action.payload,
           isLoading: false,
           error: null
         })
+
+      // API request failure
       case REQUEST_ERROR:
         return Object.assign({}, state, {
           // Create error object with message and fifaCode
